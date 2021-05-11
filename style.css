@@ -6,12 +6,34 @@
 
 html {
     font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter {
+    background-color: #dadbd9;
+    border: 1px solid black;
+    padding: 10px;
+    width: 700px;
 }
 
 .name {
     display: flex;
     place-content: center;
 
+    border-bottom: 1px solid black;
+
+}
+
+.name p {
+    font-family: 
+    font-size: 35px;
+    padding-bottom: 6px;
 }
 
 .info {
