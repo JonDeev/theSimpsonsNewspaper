@@ -4,62 +4,103 @@
     margin: 0;
 }
 
+@font-face {
+    font-family: "mapbit1";
+    src: url(./HumanoidStraight.ttf);
+}
+
+
 html {
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
 }
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .newsletter {
     background-color: #dadbd9;
     border: 1px solid black;
     padding: 10px;
-    width: 700px;
+    width: 500px;
 }
 
 .name {
+    font-family: "mapbit1";
+    
     display: flex;
     place-content: center;
-
     border-bottom: 1px solid black;
 
 }
 
 .name p {
-    font-family: 
-    font-size: 35px;
+
+    font-size: 5rem;
     padding-bottom: 6px;
+    letter-spacing: 2.2px;
+    
+    
 }
 
 .info {
     display: flex;
     justify-content: space-between;
+    font-family: sans-serif;
+    font-size: medium;
+    border-bottom: 1px solid black;
+    padding: 3px;
 }
 
 .title {
     display: flex;
     place-content: center;
+    padding: 2px;
 }
 
 .title>h1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    font-size: 5.0rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 .content {
     display: flex;
 }
 
+.content .left-side {
+    width: 50%;
+}
+
+.content .right-side {
+    width: 50%;
+}
+
 .left-side>h2 {
     display: flex;
     flex-direction: column;
+    border-top: 1px solid black;
 }
 
 .left-side>div {
     display: flex;
+}
+
+.right-side img {
+    transform: rotate(-1deg);
+    width: 100%;
+}
+
+body .pages {
+    width: 470px;
+    height: 10px;
+
+    border: 1px solid black;
 }
